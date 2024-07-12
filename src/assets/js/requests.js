@@ -1,4 +1,4 @@
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "41c985a3452ee5b09651a77f862545c7";
 
 const requests = {
   fetchNetflixOriginals: {
@@ -7,7 +7,7 @@ const requests = {
   },
   fetchTrendingNow: {
     title: "Trending Now",
-    fetchUrl: ` /trending/all/week?api_key=${API_KEY}&language=en-US`,
+    fetchUrl: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   },
   fetchTopRated: {
     title: "Top Rated",
@@ -15,7 +15,7 @@ const requests = {
   },
   fetchActionMovies: {
     title: "Action Movies",
-    fetchUrl: `/movie/top_rated?api_key=${API_KEY}&with_genres=28`,
+    fetchUrl: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
   },
   fetchComedyMovies: {
     title: "Comedy Movies",
@@ -34,4 +34,5 @@ const requests = {
     fetchUrl: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
   },
 };
+
 export default requests;
