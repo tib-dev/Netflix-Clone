@@ -1,9 +1,9 @@
 // import './assets/commonResources/js/jQuery';
+
 import Nav from "./components/Nav/Nav";
 import Row from "./components/Row/Row";
 import requests from "./assets/js/requests";
-import "./App.css";
-
+import "/App.css";
 
 function App() {
   return (

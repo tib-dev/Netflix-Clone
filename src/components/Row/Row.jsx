@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "../../assets/js/axios";
-import  ''
+import './Row.css'
+
+
+
 
 function Row({ title, fetchURL }) {
   const [movies, setMovies] = useState([]);
